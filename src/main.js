@@ -6,9 +6,16 @@ import store from './store'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
+//setting
+import {initFn} from './settings'
+//是否开启vconsole调试
+initFn(false)
+
 Vue.use(Vant);
 
 Vue.config.productionTip = false
+
+
 
 new Vue({
   router,
